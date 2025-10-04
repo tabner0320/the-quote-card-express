@@ -1,55 +1,60 @@
-<<<<<<< HEAD
-# Contact Card Assignment
+The Quote Card Express
 
-The purpose of this challenge is to create a responsive contact card using flexbox and/or grid. The card can be for you personally or for a fictitious character. In the previous exercises you were provided code to focus on semantic HTML, Flexbox, and Grid. In this exercise, it will be up to you to build the project.
+An Express.js server that serves a static frontend page from a `public/` directory.  
+Built as a minimal setup for serving HTML, CSS, and client-side JavaScript with Node + Express.
 
-You will use this wireframe as a guide to complete your project.
+📁 Project Structure
 
-![Example Mockup](./wireframes/example-mockup.png)  
-
-
-## Instructions
-
-### Prerequisites
-
-Before you begin, ensure you have the following installed:
-
-- **Git:** Version control system to clone and manage the repository.
-- **GitHub:** make sure you have an account to sync your repositories to.
-- **Code Editor:** Any code editor like [Visual Studio Code](https://code.visualstudio.com/)
-
-### Cloning the Repository
-
-Follow these steps to fork and clone the repository:
-
-1. Open your terminal or Git Bash.
-2. Navigate to the directory where you want to store the project.
-3. Fork the repository.
-4. Clone the forked repository to edit on your local computer.
-
-### Viewing the Project
-
-To view the project locally, you can either open the project files in your code editor or open the HTML files in your browser.
-
-### Tasks
-In `index.html`, add the following for your contact card:
-- [ ] A Profile Image (your image should be stored in the images folder)
-- [ ] A Name
-- [ ] Title
-- [ ] Phone Number
-- [ ] Company Name
-
-In `style.css`, do the following:
-- [ ] Include the css reset in this file. If you are unsure how to do this, please refer to the last assignment.
-- [ ] Write two media queries to account for larger sized screens. Use the breakpoint sizes from the example wireframe or adjust them to fit your card.
-- [ ] Ensure that your card is centered horizontally on all device sizes.
+the-quote-card-express/
+├── public/
+│ └── index.html
+├── .gitignore
+├── package.json
+├── package-lock.json
+└── server.js
 
 
-**BONUS**
-- [ ] Make your contact card centered vertically, as well as horizontally.
+- **public/** — holds static frontend assets (HTML, CSS, JS)  
+- **server.js** — the Express app, configured to serve static files and parse body data  
+- **package.json** — project metadata and scripts  
+- **.gitignore** — specifies files/folders to ignore (e.g. `node_modules/`, `.env`)
 
-### Submitting Your Work
+- Getting Started
 
-After completing the assignment, make sure to commit your changes and push them back to your own repository and turn in the GitHub link in OpenClass.
-=======
+Follow these steps to run the project locally:
 
+1. **Clone the repository**  
+   ```bash
+   git clone https://github.com/tabner0320/the-quote-card-express.git
+   cd the-quote-card-express
+
+   Install dependencies
+
+npm install
+
+Start the server
+
+npm run dev
+
+View in browser
+Open your browser and go to:
+
+http://localhost:5500
+
+
+You should see the content from public/index.html.
+
+Features & Middleware
+
+Serves static files from public/ using
+
+app.use(express.static("./public"));
+
+
+Parses JSON request bodies via express.json()
+
+Parses URL-encoded form data via express.urlencoded({ extended: false })
+
+Basic route setup and listening logic
+
+Easily extensible if you want to add APIs or dynamic routing later

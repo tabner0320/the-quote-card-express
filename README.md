@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Contact Card Assignment
 
 The purpose of this challenge is to create a responsive contact card using flexbox and/or grid. The card can be for you personally or for a fictitious character. In the previous exercises you were provided code to focus on semantic HTML, Flexbox, and Grid. In this exercise, it will be up to you to build the project.
@@ -50,3 +51,5 @@ In `style.css`, do the following:
 ### Submitting Your Work
 
 After completing the assignment, make sure to commit your changes and push them back to your own repository and turn in the GitHub link in OpenClass.
+=======
+

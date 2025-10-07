@@ -1,21 +1,18 @@
 "use strict";
 
 const express = require("express");
+const path = require("path");
 const app = express();
 
-// Define the port
-const port = 5500;
+const port = process.env.PORT || 3000;
 
-// Serve static files from the "public" directory
-app.use(express.static("./public"));
-
-// Middleware to parse JSON request bodies
+app.use(express.static(path.join(__dirname, "public")));
 app.use(express.json());
 
-// Middleware to parse URL-encoded form data
+
 app.use(express.urlencoded({ extended: false }));
 
-// Example route (root)
+
 app.get("/", (req, res) => {
   res.send("Hello, Express server is running and serving static files 🚀");
 });

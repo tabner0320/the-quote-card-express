@@ -58,3 +58,6 @@ Parses URL-encoded form data via express.urlencoded({ extended: false })
 Basic route setup and listening logic
 
 Easily extensible if you want to add APIs or dynamic routing later
+
+## AI Assistance Disclosure
+Portions of this project were developed with guidance from ChatGPT (OpenAI) to assist with structure, code examples, and formatting. All final code was reviewed, edited, and tested by Theophilus M. Abner Jr.

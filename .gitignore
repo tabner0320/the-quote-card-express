@@ -16,3 +16,9 @@ yarn-error.log
 .DS_Store
 Thumbs.db
 >>>>>>> 228293c043bb017009e340abecc8988cad85001d
+
+# Node dependencies
+node_modules/
+
+# Environment variables
+.env
